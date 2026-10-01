@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Estimator</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="app-header">
+            <p class="eyebrow"><span></span> YOUR WEATHER, AT A GLANCE</p>
+            <h1>Weather Estimator</h1>
+            <p class="subtitle">A little forecast for wherever you are.</p>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot search-location-icon" aria-hidden="true"></i>
+            <input type="text" placeholder="Search for a city" id="city-input" aria-label="City name">
+
+            <button id="search-btn" type="button" aria-label="Search weather">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <button id="location-btn" type="button">
+            <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
+            Use my current location
+        </button>
+
+        <!-- Weather Information -->
+        <section class="weather-info" aria-label="Current weather">
+
+            <div class="weather-icon" aria-hidden="true">
+                ☀️
+            </div>
+
+            <h2 class="temperature">30°C</h2>
+
+            <h3 class="city">Mumbai</h3>
+            <p class="date-time"></p>
+
+            <p class="description">Clear Sky</p>
+
+            <!-- Extra Details -->
+            <div class="details">
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p>Humidity</p>
+                        <span class="humidity">60%</span>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p>Wind</p>
+                        <span class="wind">15 km/h</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
